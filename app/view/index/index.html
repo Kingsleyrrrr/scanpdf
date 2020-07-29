@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="/scan" enctype="multipart/form-data" method="post">
+    <input type="file" name="image" /> <br>
+    <input type="submit" value="上传" />
+</form>
+多选上传
+<form action="/mult_scan" enctype="multipart/form-data" method="post">
+    <input type="file" name="images[]" multiple="multiple" /> <br>
+    <input type="submit" value="多选上传" />
+</form>
+表格图片上传
+<form action="/tableTest" enctype="multipart/form-data" method="post">
+    <input type="file" name="image"/> <br>
+    <input type="submit" value="表格识别" />
+</form>
+<!--<table border="1" cellspacing="0">-->
+<!--<tr>-->
+<!--    <th>租金价格</th>-->
+<!--    <th>租金票据</th>-->
+<!--    <th>电费价格</th>-->
+<!--    <th>电费票据</th>-->
+<!--</tr>-->
+<!--<tr>-->
+
+<!--    <td>row 1, cell 2</td>-->
+<!--</tr>-->
+<!--<tr>-->
+<!--    <td>row 2, cell 1</td>-->
+<!--    <td>row 2, cell 2</td>-->
+<!--</tr>-->
+<!--</table>-->
+<!--<tr>-->
+</body>
+</html>
